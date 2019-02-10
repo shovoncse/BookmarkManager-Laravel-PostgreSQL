@@ -26,7 +26,7 @@
                             <li class="list-group-item clearfix">
                                 <a href="{{$bookmark -> url}}" target="_blank" style="position:absolute;top:30%">{{$bookmark -> name}} <span class="badge badge-secondary"> {{$bookmark->description}}</span></a>
                                 <span class="float-right button-group">
-                                    <button type="button" class="btn btn-danger" name="button"><i class="fa fa-remove"></i> Delete</button>
+                                <button data-id="{{$bookmark->id}}"  type="button" class="delete-bookmark btn btn-danger" name="button"><i class="fa fa-remove"></i> Delete</button>
                                 </span>
                             </li>
                         @endforeach
